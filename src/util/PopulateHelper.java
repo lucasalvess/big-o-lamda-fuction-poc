@@ -19,15 +19,15 @@ public class PopulateHelper {
         return videos;
     }
 
-    public static Player generatePlayer(){
-        return new Player(UUID.randomUUID().toString(),100, generateVideoListByLength(5));
+    public static Player generatePlayer(int videosPerPlayer){
+        return new Player(UUID.randomUUID().toString(),100, generateVideoListByLength(videosPerPlayer));
     }
 
-    public static List<Player> generatePlayerListByLength(int length){
+    public static List<Player> generatePlayerListByLength(int length, int videosPerPlayer){
         List<Player> players = new ArrayList<>();
 
         for (int i=0; i < length;i++){
-            players.add(generatePlayer());
+            players.add(generatePlayer(length));
         }
 
         return players;

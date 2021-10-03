@@ -13,8 +13,8 @@ public class TestApplication {
         Player proPlayer = new Player("patriot", 999,
                 PopulateHelper.generateVideoListByLength(500));
 
-        Team smallTeam = new Team("smallTeam", PopulateHelper.generatePlayerListByLength(10));
-        Team largeTeam = new Team("largeTeam", PopulateHelper.generatePlayerListByLength(100));
+        Team smallTeam = new Team("smallTeam", PopulateHelper.generatePlayerListByLength(10, 5));
+        Team largeTeam = new Team("largeTeam", PopulateHelper.generatePlayerListByLength(30,15));
 
 
         TimeUtil.getPlayerInfoWithMetrics("Constant complexity with normal player", player);
