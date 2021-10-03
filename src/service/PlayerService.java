@@ -8,13 +8,13 @@ import java.util.List;
 
 public class PlayerService {
 
-    public void getPlayerInfo(Player player){
+    public static void getPlayerInfo(Player player){
         //Constant complexity O(1)
         System.out.println("Player: " + player.getName());
         System.out.println("Level: " + player.getLevel());
     }
 
-    private void watchPlayerMatches(Player player){
+    public static void watchPlayerMatches(Player player){
         //Linear complexity O(n)
         List<Video> matches = player.getLastMatches();
 
@@ -23,7 +23,7 @@ public class PlayerService {
         }
     }
 
-    private void watchTeamMatches(Team team){
+    public static void watchTeamMatches(Team team){
         //Quadratic complexity O(2)
         for (Player player : team.getPlayers()){
             for (Video match : player.getLastMatches()) {
