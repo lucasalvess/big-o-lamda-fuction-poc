@@ -26,6 +26,11 @@ public class TestApplication {
         TimeUtil.watchTeamMatchesWithMetrics("Quadratic complexity with small team", smallTeam);
         TimeUtil.watchTeamMatchesWithMetrics("Quadratic complexity with large team", largeTeam);
 
+        TimeUtil.watchPlayerMatchesWithMetrics("Linear complexity with normal player LAMBDA", player);
+        TimeUtil.watchPlayerMatchesWithMetrics("Linear complexity with pro player LAMBDA", proPlayer);
+
+        TimeUtil.watchTeamMatchesWithMetrics("Quadratic complexity with small team LAMBDA", smallTeam);
+        TimeUtil.watchTeamMatchesWithMetrics("Quadratic complexity with large team LAMBDA", largeTeam);
 
     }
 }

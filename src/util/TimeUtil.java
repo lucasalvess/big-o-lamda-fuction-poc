@@ -26,5 +26,18 @@ public class TimeUtil {
         long time = System.currentTimeMillis() - start;
         System.out.printf("Process %s took %d ms %n", processCase, time);
     }
+    public static void watchPlayerMatchesUsingLambdaWithMetrics(String processCase, Player player) {
+        long start = System.currentTimeMillis();
+        PlayerService.watchPlayerMatchesWithLambda(player);
+        long time = System.currentTimeMillis() - start;
+        System.out.printf("Process %s took %d ms %n", processCase, time);
+    }
+
+    public static void watchTeamMatchesUsingLambdaWithMetrics(String processCase, Team team) {
+        long start = System.currentTimeMillis();
+        PlayerService.watchTeamMatchesWithLambda(team);
+        long time = System.currentTimeMillis() - start;
+        System.out.printf("Process %s took %d ms %n", processCase, time);
+    }
 
 }
