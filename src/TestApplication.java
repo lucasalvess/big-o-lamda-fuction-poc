@@ -5,16 +5,16 @@ import util.TimeUtil;
 
 public class TestApplication {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Player player = new Player("lcluphus", 10,
                 PopulateHelper.generateVideoListByLength(5));
 
         Player proPlayer = new Player("patriot", 999,
-                PopulateHelper.generateVideoListByLength(500));
+                PopulateHelper.generateVideoListByLength(50));
 
-        Team smallTeam = new Team("smallTeam", PopulateHelper.generatePlayerListByLength(10, 5));
-        Team largeTeam = new Team("largeTeam", PopulateHelper.generatePlayerListByLength(30,15));
+        Team smallTeam = new Team("smallTeam", PopulateHelper.generatePlayerListByLength(10, 10));
+        Team largeTeam = new Team("largeTeam", PopulateHelper.generatePlayerListByLength(100,100));
 
 
         TimeUtil.getPlayerInfoWithMetrics("Constant complexity with normal player", player);
