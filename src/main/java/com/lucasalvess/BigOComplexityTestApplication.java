@@ -31,8 +31,8 @@ public class BigOComplexityTestApplication {
         TimeUtil.watchPlayerMatchesWithMetrics("Linear complexity with normal player LAMBDA", player);
         TimeUtil.watchPlayerMatchesWithMetrics("Linear complexity with pro player LAMBDA", proPlayer);
 
-        TimeUtil.watchTeamMatchesWithMetrics("Quadratic complexity with small team LAMBDA", smallTeam);
-        TimeUtil.watchTeamMatchesWithMetrics("Quadratic complexity with large team LAMBDA", largeTeam);
+        TimeUtil.watchTeamMatchesUsingLambdaWithMetrics("Quadratic complexity with small team LAMBDA", smallTeam);
+        TimeUtil.watchTeamMatchesUsingLambdaWithMetrics("Quadratic complexity with large team LAMBDA", largeTeam);
 
     }
 }
