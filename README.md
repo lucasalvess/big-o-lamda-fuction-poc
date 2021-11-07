@@ -16,5 +16,5 @@ $ javac -classpath . src/model/*.java src/util/*.java src/service/*.java  src/*.
 
 ```shell script
 $ cd src
-java TestApplication
+java BigOComplexityTestApplication
 ```

@@ -4,7 +4,7 @@ import com.lucasalvess.model.Team;
 import com.lucasalvess.util.PopulateHelper;
 import com.lucasalvess.util.TimeUtil;
 
-public class QuadraticForPerformanceTestApplication {
+public class ForPerformanceTestApplication {
 
     public static void main(String[] args) {
 
