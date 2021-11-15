@@ -1,0 +1,40 @@
+version: '3.7'
+
+#Instancias equivalenetes á m5.large
+
+services:
+  general-test:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ../
+      args:
+        EXECUTABLE_CLASS: BigOComplexityTestApplication
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 8G
+
+  for-test:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ../
+      args:
+        EXECUTABLE_CLASS: ForPerformanceTestApplication
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 8G
+
+  flatmap-test:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ../
+      args:
+        EXECUTABLE_CLASS: LambdaPerformanceTestApplication
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 8G
