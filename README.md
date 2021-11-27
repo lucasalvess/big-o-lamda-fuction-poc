@@ -28,5 +28,10 @@ $ docker-compose -f docker/docker-compose.yml up --build flatmap-test
 
 *General test case (run all test case and additional algorithm complexities) :*
 ```shell script
-$ docker-compose -f docker/docker-compose.yml up --build flatmap-test
+$ docker-compose -f docker/docker-compose.yml up --build general-test
+```
+
+*Parallel test case (run tests in parallel) :*
+```shell script
+$ docker-compose -f docker/docker-compose-test.yml up --build
 ```
