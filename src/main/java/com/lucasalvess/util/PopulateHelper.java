@@ -9,7 +9,7 @@ import java.util.UUID;
 
 public class PopulateHelper {
 
-    private static  final String S3_VIDEO_URL = "src/main/resources/assets/video.csv";
+    private static final String S3_VIDEO_URL = "/video.csv";
 
     public static List<Video> generateVideoListByLength(int length){
         List<Video> videos = new ArrayList<>();

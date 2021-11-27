@@ -9,7 +9,6 @@ Compare big O complexities using incremental and lambda algorithms working with 
 ### Running test cases
 Building images and run all test cases.
 
-
 *On base project folder:*
 ```shell script
 $ docker-compose -f docker/docker-compose.yml up --build

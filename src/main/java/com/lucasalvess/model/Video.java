@@ -1,8 +1,9 @@
 package com.lucasalvess.model;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +19,8 @@ public class Video {
 
     public void watch() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(s3FileUrl));
+            InputStream inputStream = getClass().getResourceAsStream(s3FileUrl);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             String line = reader.readLine();
             String separator = ",";
 

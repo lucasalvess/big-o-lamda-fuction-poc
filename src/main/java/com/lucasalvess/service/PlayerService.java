@@ -35,7 +35,7 @@ public class PlayerService {
 
     public static void watchPlayerMatchesWithLambda(Player player) {
         //Linear complexity O(n)
-        player.getLastMatches().forEach(video -> video.watch());
+        player.getLastMatches().forEach(Video::watch);
     }
 
     public static void watchTeamMatchesWithLambda(Team team) {
@@ -43,7 +43,7 @@ public class PlayerService {
         team.getPlayers().stream()
                 .map(Player::getLastMatches)
                 .flatMap(Collection::stream)
-                .forEach(video -> video.watch());
+                .forEach(Video::watch);
 
     }
 }
