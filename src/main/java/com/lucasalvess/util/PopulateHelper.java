@@ -29,7 +29,7 @@ public class PopulateHelper {
         List<Player> players = new ArrayList<>();
 
         for (int i=0; i < length;i++){
-            players.add(generatePlayer(length));
+            players.add(generatePlayer(videosPerPlayer));
         }
 
         return players;
